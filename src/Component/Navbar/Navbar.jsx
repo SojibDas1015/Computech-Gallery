@@ -2,12 +2,12 @@ import React from 'react';
 import '../../App.css'
 const Navbar = () => {
     return (
-        <div className='bg-black/5 backdrop-blur-lg sticky top-0 left-0'>
+        <div className='bg-black/5 backdrop-blur-lg fixed top-0 left-0 w-full'>
             <div className="navbar justify-between max-w-[95%] md:max-w-[84%] mx-auto font-Poppins">
                 <div>
-                    <a className="btn-ghost text-xl"><span className='text-[#003EA4]'>Computech</span> <span className='font-bold text-[#FFD337]'>Gallery</span></a>
+                    <a className="btn-ghost text-xl"><span className='text-white'>Computech</span> <span className='font-bold text-white'>Gallery</span></a>
                 </div>
-                <ul className='hidden md:flex items-center gap-8 text-base'>
+                <ul className='hidden md:flex items-center gap-8 text-base text-white'>
                     <li>Home</li>
                     <li>Auctions</li>
                     <li>Categories</li>

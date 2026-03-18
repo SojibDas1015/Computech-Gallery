@@ -6,7 +6,7 @@
         "currentBidPrice": 85000,
         "timeLeft": "2h 30m",
         "bidsCount": 12,
-        "image": "https://i.ibb.co/3yZ0K7Z/laptop.jpg"
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9GPxelE5W1iQ2fI6ZaKmbertZAeTBvh-eeA&s"
     },
     {
         "id": 2,
@@ -15,7 +15,7 @@
         "currentBidPrice": 4500,
         "timeLeft": "5h 10m",
         "bidsCount": 8,
-        "image": "https://i.ibb.co/Wp1G0kH/keyboard.jpg"
+        "image": "https://www.binarylogic.com.bd/images/product_image/Mode--K98.webp"
     },
     {
         "id": 3,
@@ -24,7 +24,7 @@
         "currentBidPrice": 1200,
         "timeLeft": "1h 45m",
         "bidsCount": 5,
-        "image": "https://i.ibb.co/3R0s2rG/mouse.jpg"
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD0MupmPXht_Mpgh13BiJsImwwkKiYmbClgQ&s"
     },
     {
         "id": 4,
@@ -33,7 +33,7 @@
         "currentBidPrice": 18000,
         "timeLeft": "3h 20m",
         "bidsCount": 9,
-        "image": "https://i.ibb.co/5T1f4kY/monitor.jpg"
+        "image": "https://www.ryans.com/storage/products/small/hp-starvision-pro-monitor-524e-238-inch-fhd-hdmi-11771487728.webp"
     },
     {
         "id": 5,
@@ -42,7 +42,7 @@
         "currentBidPrice": 9500,
         "timeLeft": "6h 00m",
         "bidsCount": 6,
-        "image": "https://i.ibb.co/0GQfF7L/ssd.jpg"
+        "image": "https://www.startech.com.bd/image/cache/catalog/ssd/sandisk/extreme-v2/extreme-v2-01-500x500.jpg"
     },
     {
         "id": 6,
@@ -51,7 +51,7 @@
         "currentBidPrice": 3200,
         "timeLeft": "4h 15m",
         "bidsCount": 7,
-        "image": "https://i.ibb.co/9WcXK6c/headset.jpg"
+        "image": "https://www.ultratech.com.bd/image/cache/catalog/products_2024/hyperx-cloud-iii-wired-gaming-headset-black-1-500x500.jpg"
     },
     {
         "id": 7,
@@ -60,6 +60,6 @@
         "currentBidPrice": 55000,
         "timeLeft": "7h 40m",
         "bidsCount": 15,
-        "image": "https://i.ibb.co/F4z2V2y/gpu.jpg"
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5rapHSA8vsfkTXyV5qYMThU8LjAzKzFHvRQ&s"
     }
 ]
