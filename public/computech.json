@@ -1,0 +1,65 @@
+[
+    {
+        "id": 1,
+        "title": "Gaming Laptop",
+        "description": "High performance gaming laptop with RTX graphics and fast processor.",
+        "currentBidPrice": 85000,
+        "timeLeft": "2h 30m",
+        "bidsCount": 12,
+        "image": "https://i.ibb.co/3yZ0K7Z/laptop.jpg"
+    },
+    {
+        "id": 2,
+        "title": "Mechanical Keyboard",
+        "description": "RGB mechanical keyboard with blue switches for fast typing.",
+        "currentBidPrice": 4500,
+        "timeLeft": "5h 10m",
+        "bidsCount": 8,
+        "image": "https://i.ibb.co/Wp1G0kH/keyboard.jpg"
+    },
+    {
+        "id": 3,
+        "title": "Wireless Mouse",
+        "description": "Ergonomic wireless mouse with long battery life.",
+        "currentBidPrice": 1200,
+        "timeLeft": "1h 45m",
+        "bidsCount": 5,
+        "image": "https://i.ibb.co/3R0s2rG/mouse.jpg"
+    },
+    {
+        "id": 4,
+        "title": "27 inch Monitor",
+        "description": "Full HD IPS display monitor with ultra-thin bezels.",
+        "currentBidPrice": 18000,
+        "timeLeft": "3h 20m",
+        "bidsCount": 9,
+        "image": "https://i.ibb.co/5T1f4kY/monitor.jpg"
+    },
+    {
+        "id": 5,
+        "title": "External SSD",
+        "description": "Portable high-speed SSD with 1TB storage capacity.",
+        "currentBidPrice": 9500,
+        "timeLeft": "6h 00m",
+        "bidsCount": 6,
+        "image": "https://i.ibb.co/0GQfF7L/ssd.jpg"
+    },
+    {
+        "id": 6,
+        "title": "Gaming Headset",
+        "description": "Surround sound gaming headset with noise cancellation.",
+        "currentBidPrice": 3200,
+        "timeLeft": "4h 15m",
+        "bidsCount": 7,
+        "image": "https://i.ibb.co/9WcXK6c/headset.jpg"
+    },
+    {
+        "id": 7,
+        "title": "Graphics Card",
+        "description": "High-end GPU for gaming and rendering performance.",
+        "currentBidPrice": 55000,
+        "timeLeft": "7h 40m",
+        "bidsCount": 15,
+        "image": "https://i.ibb.co/F4z2V2y/gpu.jpg"
+    }
+]
