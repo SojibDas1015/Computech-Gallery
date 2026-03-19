@@ -5,31 +5,37 @@ import Navbar from './Component/Navbar/Navbar'
 import TableData from './Component/TableData/TableData'
 import { MdFavoriteBorder } from "react-icons/md";
 import Favorite from './Favorite/Favorite';
+import toast, { Toaster } from 'react-hot-toast';
 
 function App() {
   const [products, setProduct] = useState([])
   const [totalAmount, setTotalAmount] = useState(0)
   const handleAddFavorite = (item) => {
     setProduct([...products, item])
-    setTotalAmount(totalAmount+item.currentBidPrice)
+    setTotalAmount(totalAmount + item.currentBidPrice)
+    toast.success('Successfully Added from Favorite Items')
+
   }
   const handleRemoveFavorite = (item) => {
     const remainingProducts = products.filter(product => product.id !== item.id);
     setProduct(remainingProducts)
-    setTotalAmount(totalAmount-item.currentBidPrice)
+    setTotalAmount(totalAmount - item.currentBidPrice)
+    toast.error("Remove from Favorite Items")
+
   }
   return (
     <>
       <Navbar></Navbar>
       <Banner></Banner>
+      <Toaster position='top-right'></Toaster>
       <div className='bg-[#EBF0F5]'>
         <div className="container pt-20 max-w-[95%] md:max-w-[84%] mx-auto pb-10">
           <div className="left-side ">
             <h1 className='text-3xl font-semibold'>Active Auctions</h1>
             <p className='pb-6'>Discover and bid on extraordinary items</p>
             <div className="right-side md:flex justify-between">
-              <TableData handleAddFavorite={handleAddFavorite}></TableData>
-              <div className='mt-10 md:m-0 bg-white rounded-2xl flex flex-col items-center w-[35%]'>
+              <TableData handleAddFavorite={handleAddFavorite} products={products}></TableData>
+              <div className='mt-10 md:m-0 bg-white rounded-2xl flex flex-col items-center w-full md:w-[35%]'>
                 <div className='border-b-2 border-[#DCE5F3] w-full'>
                   <div className=' text-xl md:text-2xl font-semibold text-center px-9 py-4 text-[#0E2954] flex items-center justify-center gap-2'><span className='text-2xl md:text-3xl font-bold'><MdFavoriteBorder /></span> Favorite Items</div>
                 </div>
@@ -54,8 +60,8 @@ function App() {
                 </table>
                 <div className={`${products.length === 0 && 'border-t-2 border-[#DCE5F3] w-full'}`}>
                   <div className='flex justify-between '>
-                    <div className='px-9 py-4 text-sm md:text-xl font-semibold'>Total bids Amount</div>
-                    <div className='px-9 py-4 text-sm md:text-xl font-semibold'>${totalAmount}</div>
+                    <div className='px-9 py-4 text-sm md:text-base font-semibold'>Total bids Amount</div>
+                    <div className='px-9 py-4 text-sm md:text-base font-semibold'>${totalAmount}</div>
                   </div>
                 </div>
               </div>

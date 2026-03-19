@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import TableItem from '../../TableItem/TableItem';
 
-const TableData = ({handleAddFavorite}) => {
+const TableData = ({handleAddFavorite, products}) => {
     const [data, setData ] = useState([])
     useEffect(()=>{
         fetch('computech.json')
@@ -24,6 +24,7 @@ const TableData = ({handleAddFavorite}) => {
                     {
                         data.map(data=> <TableItem key={data.id} 
                             handleAddFavorite={handleAddFavorite}
+                            products={products}
                             data={data}></TableItem>)
                     }
                 </tbody>
