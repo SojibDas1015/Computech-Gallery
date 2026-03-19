@@ -12,11 +12,11 @@ const TableData = () => {
         <div>
             <table className='bg-white rounded-2xl'>
                 <thead>
-                    <tr className='text-base font-bold'>
-                        <td className='p-5'>Items</td>
-                        <td className='p-5'>Current Bid</td>
-                        <td className='p-5'>Time Left</td>
-                        <td className='p-5'>Bid Now</td>
+                    <tr className='text-[12px] md:text-base font-bold'>
+                        <td className='p-2 md:p-5'>Items</td>
+                        <td className='p-2 md:p-5'>Current Bid</td>
+                        <td className='p-2 md:p-5'>Time Left</td>
+                        <td className='p-2 md:p-5'>Bid Now</td>
                     </tr>
                 </thead>
                 <tbody>
