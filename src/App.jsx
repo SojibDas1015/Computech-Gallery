@@ -48,7 +48,7 @@ function App() {
                         handleRemoveFavorite={handleRemoveFavorite}
                         product={product}></Favorite>)
 
-                      : <tbody>
+                      : <tbody className='text-black'>
                         <tr>
                           <td className='text-base md:text-xl font-semibold text-center px-9 py-4 md:py-9'>No favorites yet</td>
                         </tr>
@@ -58,7 +58,7 @@ function App() {
                       </tbody>
                   }
                 </table>
-                <div className={`${products.length === 0 && 'border-t-2 border-[#DCE5F3] w-full'}`}>
+                <div className={`${products.length === 0 && 'border-t-2 border-[#DCE5F3] w-full'} text-black`}>
                   <div className='flex justify-between '>
                     <div className='px-9 py-4 text-sm md:text-base font-semibold'>Total bids Amount</div>
                     <div className='px-9 py-4 text-sm md:text-base font-semibold'>${totalAmount}</div>
