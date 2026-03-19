@@ -11,6 +11,10 @@ function App() {
   const handleAddFavorite = (item) => {
     setProduct([...products, item])
   }
+  const handleRemoveFavorite = (item) => {
+    const remainingProducts = products.filter(product => product.id !== item.id);
+    setProduct(remainingProducts)
+  }
   return (
     <>
       <Navbar></Navbar>
@@ -31,7 +35,9 @@ function App() {
                   {
                     products.length > 0 ?
 
-                      products.map(product => <Favorite key={product.id} product={product}></Favorite>)
+                      products.map(product => <Favorite key={product.id} 
+                        handleRemoveFavorite={handleRemoveFavorite}
+                        product={product}></Favorite>)
 
                       : <tbody>
                         <tr>
