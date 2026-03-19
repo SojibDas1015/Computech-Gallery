@@ -6,6 +6,7 @@ import TableData from './Component/TableData/TableData'
 import { MdFavoriteBorder } from "react-icons/md";
 import Favorite from './Favorite/Favorite';
 import toast, { Toaster } from 'react-hot-toast';
+import Footer from './Component/Footer/Footer';
 
 function App() {
   const [products, setProduct] = useState([])
@@ -69,6 +70,7 @@ function App() {
           </div>
         </div>
       </div>
+      <Footer></Footer>
     </>
   )
 }
