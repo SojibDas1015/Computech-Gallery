@@ -31,8 +31,8 @@ function App() {
       <div className='bg-[#EBF0F5]'>
         <div className="container pt-20 max-w-[95%] md:max-w-[84%] mx-auto pb-10">
           <div className="left-side ">
-            <h1 className='text-3xl font-semibold'>Active Auctions</h1>
-            <p className='pb-6'>Discover and bid on extraordinary items</p>
+            <h1 className='text-3xl font-semibold text-black'>Active Auctions</h1>
+            <p className='pb-6 text-black'>Discover and bid on extraordinary items</p>
             <div className="right-side md:flex justify-between">
               <TableData handleAddFavorite={handleAddFavorite} products={products}></TableData>
               <div className='mt-10 md:m-0 bg-white rounded-2xl flex flex-col items-center w-full md:w-[35%]'>
