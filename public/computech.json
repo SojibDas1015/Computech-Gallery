@@ -36,6 +36,15 @@
         "image": "https://www.ryans.com/storage/products/small/hp-starvision-pro-monitor-524e-238-inch-fhd-hdmi-11771487728.webp"
     },
     {
+        "id": 7,
+        "title": "Graphics Card",
+        "description": "High-end GPU for gaming and rendering performance.",
+        "currentBidPrice": 55000,
+        "timeLeft": "7h 40m",
+        "bidsCount": 15,
+        "image": "https://smartbd.com/wp-content/uploads/2024/09/GeForce-RTX-4060-GAMING-OC-8G-1.jpg"
+    },
+    {
         "id": 5,
         "title": "External SSD",
         "description": "Portable high-speed SSD with 1TB storage capacity.",
@@ -52,14 +61,5 @@
         "timeLeft": "4h 15m",
         "bidsCount": 7,
         "image": "https://www.ultratech.com.bd/image/cache/catalog/products_2024/hyperx-cloud-iii-wired-gaming-headset-black-1-500x500.jpg"
-    },
-    {
-        "id": 7,
-        "title": "Graphics Card",
-        "description": "High-end GPU for gaming and rendering performance.",
-        "currentBidPrice": 55000,
-        "timeLeft": "7h 40m",
-        "bidsCount": 15,
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5rapHSA8vsfkTXyV5qYMThU8LjAzKzFHvRQ&s"
     }
 ]
