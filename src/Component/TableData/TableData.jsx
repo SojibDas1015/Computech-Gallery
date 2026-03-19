@@ -12,7 +12,7 @@ const TableData = ({handleAddFavorite, products}) => {
         <div>
             <table className='bg-white rounded-2xl'>
                 <thead>
-                    <tr className='text-[12px] md:text-base font-bold text-black'>
+                    <tr className='text-[14px] md:text-base font-bold text-black'>
                         <td className='p-2 md:p-5'>Items</td>
                         <td className='p-2 md:p-5'>Current Bid</td>
                         <td className='p-2 md:p-5'>Time Left</td>
