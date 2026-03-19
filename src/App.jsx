@@ -8,12 +8,15 @@ import Favorite from './Favorite/Favorite';
 
 function App() {
   const [products, setProduct] = useState([])
+  const [totalAmount, setTotalAmount] = useState(0)
   const handleAddFavorite = (item) => {
     setProduct([...products, item])
+    setTotalAmount(totalAmount+item.currentBidPrice)
   }
   const handleRemoveFavorite = (item) => {
     const remainingProducts = products.filter(product => product.id !== item.id);
     setProduct(remainingProducts)
+    setTotalAmount(totalAmount-item.currentBidPrice)
   }
   return (
     <>
@@ -26,7 +29,7 @@ function App() {
             <p className='pb-6'>Discover and bid on extraordinary items</p>
             <div className="right-side md:flex justify-between">
               <TableData handleAddFavorite={handleAddFavorite}></TableData>
-              <div className='mt-10 md:m-0 bg-white rounded-2xl flex flex-col items-center min-h-80'>
+              <div className='mt-10 md:m-0 bg-white rounded-2xl flex flex-col items-center w-[35%]'>
                 <div className='border-b-2 border-[#DCE5F3] w-full'>
                   <div className=' text-xl md:text-2xl font-semibold text-center px-9 py-4 text-[#0E2954] flex items-center justify-center gap-2'><span className='text-2xl md:text-3xl font-bold'><MdFavoriteBorder /></span> Favorite Items</div>
                 </div>
@@ -35,7 +38,7 @@ function App() {
                   {
                     products.length > 0 ?
 
-                      products.map(product => <Favorite key={product.id} 
+                      products.map((product, index) => <Favorite key={index}
                         handleRemoveFavorite={handleRemoveFavorite}
                         product={product}></Favorite>)
 
@@ -52,7 +55,7 @@ function App() {
                 <div className={`${products.length === 0 && 'border-t-2 border-[#DCE5F3] w-full'}`}>
                   <div className='flex justify-between '>
                     <div className='px-9 py-4 text-sm md:text-xl font-semibold'>Total bids Amount</div>
-                    <div className='px-9 py-4 text-sm md:text-xl font-semibold'>$0000</div>
+                    <div className='px-9 py-4 text-sm md:text-xl font-semibold'>${totalAmount}</div>
                   </div>
                 </div>
               </div>
