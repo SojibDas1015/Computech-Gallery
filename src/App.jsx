@@ -9,26 +9,33 @@ function App() {
       <Navbar></Navbar>
       <Banner></Banner>
       <div className='bg-[#EBF0F5]'>
-        <div className="container pt-20 flex justify-between max-w-[95%] md:max-w-[84%] mx-auto pb-10">
+        <div className="container pt-20 max-w-[95%] md:max-w-[84%] mx-auto pb-10">
           <div className="left-side ">
             <h1 className='text-3xl font-semibold'>Active Auctions</h1>
             <p className='pb-6'>Discover and bid on extraordinary items</p>
-            <div className="right-side flex justify-between gap-4">
+            <div className="right-side flex justify-between">
               <TableData></TableData>
-              <div className='p-5 bg-white rounded-2xl'>
-                <table>
+              <div>
+                <table className='bg-white min-h-[340px] rounded-2xl'>
                   <thead>
-                    <tr className='border-b-1'>
-                      <td className='text-2xl font-semibold text-center'>Favorite Items</td>
+                    <tr className='border-b-2 border-[#DCE5F3]'>
+                      <td className='text-2xl font-semibold text-center px-9 py-4 text-[#0E2954]'>Favorite Items</td>
                     </tr>
                   </thead>
-                  <h2 className=''></h2>
-                <h3>No favorites yet</h3>
-                <p>Click the heart icon on any item to add it to your favorites</p>
-                <div>
-                  <h2>Total bids Amount</h2>
-                  <h2>$0000</h2>
-                </div>
+                  <tbody> 
+                    <tr>
+                      <td className='text-xl font-semibold text-center p-9'>No favorites yet</td>
+                    </tr>
+                    <tr>
+                      <td className='text-center text-sm px-9 pb-9'>Click the heart icon on any item <br /> to add it to your favorites</td>
+                    </tr>
+                  </tbody>
+                  <tfoot>
+                    <tr className='flex justify-between border-t-2 border-[#DCE5F3]'>
+                      <td className='p-9 text-xl font-semibold'>Total bids Amount</td>
+                      <td className='p-9 text-xl font-semibold'>$0000</td>
+                    </tr>
+                  </tfoot>
                 </table>
               </div>
             </div>
